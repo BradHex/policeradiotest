@@ -1,7 +1,6 @@
 Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(0)
-		if myJob == 'police' then
 		if(IsControlJustPressed(1, 19)) then
 			local ped = GetPlayerPed( -1 )
 			if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
@@ -23,5 +22,11 @@ Citizen.CreateThread(function()
 			end
 		end
 	end
-end
 end)
+
+
+
+
+--Ref--
+-- line below is job code
+-- if PlayerData.job.name ~= 'police' then
